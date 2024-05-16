@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 12px;
+}
+
+.box{
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 10vh;
+    /* width: 1280px; */
+    width: 80vw;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.container{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 80vw;
+    min-height: 80vh;
+    margin: 23px auto;
+    /* font-size: 18px; */
+    background-color: aquamarine;
+}
+
+.container p{
+    /* font-size: 2em; */
+    font-size: 2rem;
+    border: 2px solid red;
+    width: 50%;
+}
+
+.mycont{
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 23px auto;
+    color: rgb(2, 0, 14);
+    font-size: 22px;
+    width: 80vw;
+}
