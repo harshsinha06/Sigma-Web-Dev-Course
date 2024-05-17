@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    /* Exception: transform, filter, or prespective properties can also make an element appera as positoned 
+    transform: translate(0);
+    filter: invert(0);
+    perspective: 0em; */
+
+    padding: 43px;
+    margin: 34px;
+    border: 2px solid black;
+    /* position: relative; */
+
+
+}
+.box {
+    border: 2px solid black;
+    height: 133px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px
+}
+
+.box1 {
+    background-color: aqua;
+    /* position: sticky;
+    top: 0px;
+    height: 111px;
+    width: 100%; */
+
+    position: absolute;
+    top: 0px;
+    left: 3px;
+}
+
+.box2 {
+    background-color: azure;
+    /* top: 34px;
+    left: 56px;
+    position: relative; */
+}
+
+.box3 {
+    background-color: antiquewhite;
+    /* position: fixed;
+    bottom: 0px;
+    left: 8vw; */
+}
+
+.box4 {
+    background-color: purple;
+}
