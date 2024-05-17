@@ -1,0 +1,9 @@
+ul{
+    display: flex;
+}
+
+nav ul li{
+    display: flex;
+    padding-right: 23px;
+    list-style: none;
+}
