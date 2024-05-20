@@ -1,0 +1,86 @@
+:root{
+    --color : white;
+    --navcolor : black;
+    --primarycolor : rgb(236, 124, 124);
+    --secolor : rgb(66, 168, 66);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color);
+}
+
+.header{
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    
+}
+.textbox{
+    margin: 0px 34px;
+    font-size: 20px;
+}
+
+.searchbar{
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 6px 18px;
+    font-style: italic;
+    margin-right: 54px;
+}
+
+.searchbar i{
+    padding-left: 54px;
+}
+
+.toggle{
+    margin-right: 54px;
+}
+
+.header button{
+    border: 1px;
+    border-radius: 18px;
+
+    font-size: 18px;
+    padding: 4px 14px;
+    margin:0px 12px;
+    background-color: var(--secolor);
+    color: var(--color);
+}
+
+
+.nav{
+    background-color: var(--navcolor);
+    color: var(--color);
+    padding: 4px;
+    display: flex;
+    font-size: 20px;
+}
+
+.text{
+    margin: 0px 20px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 244px;
+    height: 344px;
+    background-color: var(--primarycolor);
+    color: var(--navcolor);
+    padding: 8px;
+    margin: 44px 34px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 20px;
+}
