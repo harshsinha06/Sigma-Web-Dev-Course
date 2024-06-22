@@ -1,0 +1,18 @@
+.container{
+    height: 488px;
+    width: 466px;
+    border: 2px solid black;
+    background-image: url("reinhart-julian-WxM465oM4j4-unsplash.jpg");
+    /* background-position: 50% 50%; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-clip: border-box;
+}
+
+/* img{
+    width: 466px;
+    height:488px;
+    object-fit: cover;
+    object-fit: fill;
+    object-position: 10px 20px;
+} */

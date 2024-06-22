@@ -1,0 +1,18 @@
+img{
+    width: 400px;
+    /* filter: blur(10px); */
+}
+
+.img1{
+    filter: brightness(222%) contrast(200%);
+}
+
+.img2{
+    /* filter: invert(.2); */
+    filter: opacity(0.6);
+
+}
+
+.img3{
+    filter: grayscale(33%);
+}
