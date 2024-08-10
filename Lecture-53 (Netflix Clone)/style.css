@@ -1,104 +1,388 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
+  color: white;
 }
 
 .main {
-    background-image: url("assets/images/bg.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: max(1800px, 100vw);
-    height: 75vh;
-    position: relative;
+  background-image: url("assets/images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1800px, 100vw);
+  height: 100vh;
+  position: relative;
 }
 
 .main .box {
-    height: 75vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 nav {
-    max-width: 75vw;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 75px;
+  max-width: 76vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  padding: 8px 0px;
 
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 nav img {
-    width: 124px;
+  width: 134px;
+}
+
+/* Style for transparent button */
+.trasnparent {
+  border: 2px solid;
+  background: rgba(22, 22, 22, 0.6);
+  border-color: rgba(128, 128, 128, 0.7);
+}
+
+.btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 6px;
+  color: white;
+  margin: 2px 8px;
+}
+
+.btn-red {
+  transition: all 0.5s ease-out;
+  border: none;
+  background-color: red;
+}
+
+.btn-red:hover {
+  cursor: pointer;
+  background-color: rgb(201, 0, 0);
 }
 
 .hero {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
 
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    font-family: 'Martel Sans, sans-serif';
+  font-family: "Martel Sans, sans-serif";
 }
 
-.hero> :first-child{
-    font-size: 48px;
-    font-weight: 900;
-    text-align: center;
+.hero > .secText {
+  text-align: center;
 }
 
-.hero> :nth-child(2) {
-    font-size: 24px;
-    font-weight: 500;
-    margin-top: 16px;
-    text-align: center;
+.membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 48px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hero> :nth-child(3) {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    text-align: center;
+.membership > span {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.hero input{
-    width: 250px;
-    background: rgba(22, 22, 22, 0.7);
-    border-color: rgba(128, 128, 128, 0.7);
-    color: white;
+.membership > div {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.membership input {
+  width: 250px;
+  color: white;
+  font-size: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+
+.membership button {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.separation {
+  height: 8px;
+  background-color: rgb(44, 44, 44);
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 76vw;
+  min-height: 65vh;
+  padding: 56px 0px;
+  margin: auto;
+}
+
+.text1 {
+  font-family: "Seoge UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.text2 {
+  font-family: "Seoge UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.secImg {
+  position: relative;
+  width: 65vw;
+}
+
+.secImg img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.first > .secImg > video {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 72%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.addon {
+  height: 20%;
+  background-color: black;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  border-radius: 12px;
+  padding: 8px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.addon > img {
+  width: 22%;
+  height: 100%;
+}
+
+.addonText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: 30px;
+}
+
+.addonText > .text3 {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.addonText > .text4 {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  color: rgb(0, 113, 235);
+}
+
+.addon > .icon {
+  width: 48px;
+}
+
+.third > .secImg > video {
+  position: absolute;
+  top: 35.5%;
+  left: 49.5%;
+  max-width: 66%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  nav img {
+    width: 114px;
+  }
+
+  .section {
+    flex-wrap: wrap;
+  }
+
+  .text1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .text2 {
+    font-size: 18px;
+  }
+}
+
+.FAQ > .secText > :first-child {
+  text-align: center;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 28px;
+  list-style: none;
+}
+
+.questions > .box {
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(45, 45, 45);
+  padding: 24px;
+  width: 76vw;
+}
+
+.questions > .box:hover {
+  background-color: rgb(69, 69, 69);
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px 0px;
+  max-width: 76vw;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 24px 0px;
+}
+
+.footer a {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer_items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 800px) {
+  nav img {
+    width: 104px;
+  }
+
+  .btn {
+    font-weight: 400;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .questions > .box {
+    padding: 20px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text3 {
+    font-size: 12px;
+  }
+  text4 {
+    font-size: 10px;
+  }
+
+  .membership > div {
+    flex-wrap: wrap;
+  }
+  .membership button {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 12px;
+  }
+
+  .membership input {
     font-size: 16px;
-    padding: 12px 16px;
+    padding: 8px 12px;
     border-radius: 6px;
+  }
 }
 
-.box button {
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    background-color: red;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
-}
+@media screen and (max-width: 500px) {
+  .btn {
+    font-weight: 400;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
 
-.seperation{
-    height: 6px;
-    background-color: rgb(69, 69, 69);
+  nav img {
+    width: 84px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text3 {
+    font-size: 10px;
+  }
+  text4 {
+    font-size: 8px;
+  }
 }
