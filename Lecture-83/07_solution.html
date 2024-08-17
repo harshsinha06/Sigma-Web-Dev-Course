@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking App</title>
+    <style>
+        .note {
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <button>Add Note</button>
+    <div class="notes"></div>
+
+    <script>
+        // Function to save notes to local storage
+        function saveNoteToLocalStorage(note) {
+            // Retrieve existing notes from local storage
+            let notes = JSON.parse(localStorage.getItem('notes')) || [];
+            // Add the new note
+            notes.push(note);
+            // Save updated notes array to local storage
+            localStorage.setItem('notes', JSON.stringify(notes));
+        }
+
+        // Function to display notes from local storage
+        function displayNotes() {
+            // Retrieve notes from local storage
+            let notes = JSON.parse(localStorage.getItem('notes')) || [];
+            // Display each note
+            notes.forEach(note => {
+                let div = document.createElement('div');
+                div.textContent = note;
+                div.className = 'note';
+                document.querySelector('.notes').appendChild(div);
+            });
+        }
+
+        // Initial call to display any existing notes
+        displayNotes();
+
+        // Add note button event listener
+        document.querySelector('button').addEventListener('click', () => {
+            let note = prompt('Enter your note');
+            if (note) {
+                saveNoteToLocalStorage(note);
+                let div = document.createElement('div');
+                div.textContent = note;
+                div.className = 'note';
+                document.querySelector('.notes').appendChild(div);
+            }
+        });
+    </script>
+</body>
+</html>
